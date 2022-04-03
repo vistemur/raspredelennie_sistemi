@@ -6,7 +6,6 @@ import jakarta.servlet.annotation.*;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Enumeration;
 
 @WebServlet(name = "Init", value = "/Init")
 public class InitialServlet extends HttpServlet {
