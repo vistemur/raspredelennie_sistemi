@@ -12030,3 +12030,531 @@ com.sun.enterprise.admin.cli.AdminMain]]
 [2022-04-01T12:07:52.401+0300] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=130 _ThreadName=Thread-7] [timeMillis: 1648804072401] [levelValue: 800] [[
   JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool]]]
 
+[2022-04-03T18:15:55.498+0300] [] [INFO] [NCLS-GFLAUNCHER-00005] [jakarta.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1648998955498] [levelValue: 800] [[
+  JVM invocation command line:
+/Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home/bin/java
+-cp
+/Users/romanpozdnyakov/Desktop/8sem/PC/lab2/glassfish6/glassfish/modules/glassfish.jar
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-Xmx512m
+-Xbootclasspath/a:/Users/romanpozdnyakov/Desktop/8sem/PC/lab2/glassfish6/glassfish/lib/grizzly-npn-api.jar
+--add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED
+--add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED
+--add-opens=java.base/java.lang=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED
+--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+--add-opens=java.naming/javax.naming.spi=ALL-UNNAMED
+--add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED
+-javaagent:/Users/romanpozdnyakov/Desktop/8sem/PC/lab2/glassfish6/glassfish/lib/monitor/flashlight-agent.jar
+-Djava.awt.headless=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djavax.xml.accessExternalSchema=all
+-Djava.security.policy=/Users/romanpozdnyakov/Desktop/8sem/PC/lab2/glassfish6/glassfish/domains/domain1/config/server.policy
+-Djava.security.auth.login.config=/Users/romanpozdnyakov/Desktop/8sem/PC/lab2/glassfish6/glassfish/domains/domain1/config/login.conf
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Djavax.net.ssl.keyStore=/Users/romanpozdnyakov/Desktop/8sem/PC/lab2/glassfish6/glassfish/domains/domain1/config/keystore.jks
+-Djavax.net.ssl.trustStore=/Users/romanpozdnyakov/Desktop/8sem/PC/lab2/glassfish6/glassfish/domains/domain1/config/cacerts.jks
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dosgi.shell.telnet.port=6666
+-Dosgi.shell.telnet.maxconn=1
+-Dosgi.shell.telnet.ip=127.0.0.1
+-Dgosh.args=--nointeractive
+-Dfelix.fileinstall.dir=/Users/romanpozdnyakov/Desktop/8sem/PC/lab2/glassfish6/glassfish/modules/autostart/
+-Dfelix.fileinstall.poll=5000
+-Dfelix.fileinstall.log.level=2
+-Dfelix.fileinstall.bundles.new.start=true
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.gmbal.no.multipleUpperBoundsException=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Dcom.sun.aas.instanceRoot=/Users/romanpozdnyakov/Desktop/8sem/PC/lab2/glassfish6/glassfish/domains/domain1
+-Dcom.sun.aas.installRoot=/Users/romanpozdnyakov/Desktop/8sem/PC/lab2/glassfish6/glassfish
+-Djava.library.path=/Users/romanpozdnyakov/Desktop/8sem/PC/lab2/glassfish6/glassfish/lib:/Users/romanpozdnyakov/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:/Users/romanpozdnyakov/Desktop/8sem/PC/lab2/glassfish6/glassfish/bin
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+/Users/romanpozdnyakov/Desktop/8sem/PC/lab2/glassfish6/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=false,,,start-domain,,,--verbose=false,,,--watchdog=false,,,--debug=false,,,--domaindir,,,/Users/romanpozdnyakov/Desktop/8sem/PC/lab2/glassfish6/glassfish/domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+false
+-asadmin-classpath
+/Users/romanpozdnyakov/Desktop/8sem/PC/lab2/glassfish6/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain]]
+
+[2022-04-03T18:16:03.326+0300] [glassfish 6.2] [INFO] [NCLS-LOGGING-00009] [jakarta.enterprise.logging] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1648998963218] [timeMillis: 1648998963326] [levelValue: 800] [[
+  Running GlassFish Version: Eclipse GlassFish  6.2.5  (build 6.x-b66-g0159b68 2022-02-12T17:39:59+0000)]]
+
+[2022-04-03T18:16:03.327+0300] [glassfish 6.2] [INFO] [NCLS-LOGGING-00010] [jakarta.enterprise.logging] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1648998963218] [timeMillis: 1648998963327] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2022-04-03T18:16:03.447+0300] [glassfish 6.2] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=26 _ThreadName=RunLevelControllerThread-1648998963223] [timeMillis: 1648998963447] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2022-04-03T18:16:03.448+0300] [glassfish 6.2] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=26 _ThreadName=RunLevelControllerThread-1648998963223] [timeMillis: 1648998963448] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2022-04-03T18:16:03.453+0300] [glassfish 6.2] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=26 _ThreadName=RunLevelControllerThread-1648998963223] [timeMillis: 1648998963453] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2022-04-03T18:16:03.527+0300] [glassfish 6.2] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1648998963218] [timeMillis: 1648998963527] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2022-04-03T18:16:03.639+0300] [glassfish 6.2] [INFO] [SEC-SVCS-00100] [jakarta.enterprise.security.services] [tid: _ThreadID=26 _ThreadName=RunLevelControllerThread-1648998963223] [timeMillis: 1648998963639] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2022-04-03T18:16:03.775+0300] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=23 _ThreadName=RunLevelControllerThread-1648998963218] [timeMillis: 1648998963775] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 21ms - bound to [/0.0.0.0:8080]]]
+
+[2022-04-03T18:16:03.795+0300] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=23 _ThreadName=RunLevelControllerThread-1648998963218] [timeMillis: 1648998963795] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 1ms - bound to [/0.0.0.0:8181]]]
+
+[2022-04-03T18:16:03.800+0300] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=23 _ThreadName=RunLevelControllerThread-1648998963218] [timeMillis: 1648998963800] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 0ms - bound to [/0.0.0.0:4848]]]
+
+[2022-04-03T18:16:03.826+0300] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1648998963218] [timeMillis: 1648998963826] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 0ms - bound to [/0.0.0.0:3700]]]
+
+[2022-04-03T18:16:03.827+0300] [glassfish 6.2] [INFO] [NCLS-CORE-00017] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1648998963827] [levelValue: 800] [[
+  Eclipse GlassFish  6.2.5  (6.x-b66-g0159b68 2022-02-12T17:39:59+0000) startup time : Felix (7,462ms), startup services(613ms), total(8,075ms)]]
+
+[2022-04-03T18:16:03.958+0300] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=23 _ThreadName=RunLevelControllerThread-1648998963218] [timeMillis: 1648998963958] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 4ms - bound to [/0.0.0.0:7676]]]
+
+[2022-04-03T18:16:03.965+0300] [glassfish 6.2] [INFO] [NCLS-BOOTSTRAP-00027] [jakarta.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1648998963965] [levelValue: 800] [[
+  Registered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@4dd94a58 as OSGi service registration: org.apache.felix.framework.ServiceRegistrationImpl@2f4919b0.]]
+
+[2022-04-03T18:16:03.999+0300] [glassfish 6.2] [INFO] [] [org.jvnet.hk2.osgiadapter] [tid: _ThreadID=21 _ThreadName=FelixStartLevel] [timeMillis: 1648998963999] [levelValue: 800] [[
+  Skipping registration of inhabitant for service reference [org.osgi.service.metatype.MetaTypeProvider] as the service object could not be obtained.]]
+
+[2022-04-03T18:16:04.008+0300] [glassfish 6.2] [INFO] [NCLS-JMX-00005] [jakarta.enterprise.system.jmx] [tid: _ThreadID=60 _ThreadName=Thread-13] [timeMillis: 1648998964008] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://172.20.10.2:8686/jndi/rmi://172.20.10.2:8686/jmxrmi]]
+
+[2022-04-03T18:16:04.139+0300] [glassfish 6.2] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=49 _ThreadName=admin-listener(1)] [timeMillis: 1648998964139] [levelValue: 800] [[
+  HV000001: Hibernate Validator 7.0.2.Final]]
+
+[2022-04-03T18:16:04.721+0300] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998964721] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-04-03T18:16:05.844+0300] [glassfish 6.2] [INFO] [NCLS-SECURITY-01002] [jakarta.enterprise.system.core.security] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998965844] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2022-04-03T18:16:05.845+0300] [glassfish 6.2] [INFO] [NCLS-SECURITY-01010] [jakarta.enterprise.system.core.security] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998965845] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2022-04-03T18:16:05.849+0300] [glassfish 6.2] [INFO] [NCLS-SECURITY-01143] [jakarta.enterprise.system.core.security] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998965849] [levelValue: 800] [[
+  Loading policy provider org.glassfish.exousia.modules.locked.SimplePolicyProvider.]]
+
+[2022-04-03T18:16:05.875+0300] [glassfish 6.2] [INFO] [NCLS-SECURITY-01011] [jakarta.enterprise.system.core.security] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998965875] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2022-04-03T18:16:06.112+0300] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998966112] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2022-04-03T18:16:06.116+0300] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998966116] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2022-04-03T18:16:06.118+0300] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998966118] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2022-04-03T18:16:06.136+0300] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998966136] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2022-04-03T18:16:06.139+0300] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998966139] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2022-04-03T18:16:06.284+0300] [glassfish 6.2] [INFO] [AS-WEB-CORE-00306] [jakarta.enterprise.web.core] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998966284] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2022-04-03T18:16:06.284+0300] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00201] [jakarta.enterprise.web] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998966284] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2022-04-03T18:16:06.664+0300] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998966664] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-04-03T18:16:06.744+0300] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998966744] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-04-03T18:16:06.752+0300] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998966752] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-04-03T18:16:13.578+0300] [glassfish 6.2] [INFO] [jts.startup_msg] [javax.enterprise.system.core.transaction.com.sun.jts.CosTransactions] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998973578] [levelValue: 800] [[
+  JTS5014: Recoverable JTS instance, serverId = [3700]]]
+
+[2022-04-03T18:16:13.869+0300] [glassfish 6.2] [SEVERE] [] [jakarta.enterprise.system.tools.deployment.dol] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998973869] [levelValue: 1000] [[
+  enterprise.deployment.backend.invalidDescriptorFailure]]
+
+[2022-04-03T18:16:13.869+0300] [glassfish 6.2] [SEVERE] [] [jakarta.enterprise.system.tools.deployment.dol] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998973869] [levelValue: 1000] [[
+  enterprise.deployment.backend.invalidDescriptorFailure]]
+
+[2022-04-03T18:16:13.922+0300] [glassfish 6.2] [INFO] [AS-JMS-CORE-00002] [jakarta.enterprise.resource.jms] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998973922] [levelValue: 800] [[
+  ADDRESSLIST in setJmsServiceProvider : mq://localhost:7676/]]
+
+[2022-04-03T18:16:13.922+0300] [glassfish 6.2] [INFO] [AS-JMS-CORE-00001] [jakarta.enterprise.resource.jms] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998973922] [levelValue: 800] [[
+  JMS Service Connection URL is : mq://localhost:7676/]]
+
+[2022-04-03T18:16:14.050+0300] [glassfish 6.2] [INFO] [] [javax.resourceadapter.mqjmsra.lifecycle] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998974050] [levelValue: 800] [[
+  MQJMSRA_RA1101: GlassFish MQ JMS Resource Adapter: Version:  6.2.0  (Build 1-a) Compile:  August 11 2021]]
+
+[2022-04-03T18:16:14.050+0300] [glassfish 6.2] [INFO] [] [javax.resourceadapter.mqjmsra.lifecycle] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998974050] [levelValue: 800] [[
+  MQJMSRA_RA1101: GlassFish MQ JMS Resource Adapter starting: broker is EMBEDDED, connection mode is Direct]]
+
+[2022-04-03T18:16:14.144+0300] [glassfish 6.2] [INFO] [] [imq.log.Logger] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998974144] [levelValue: 800] [[
+  [B1002]: An existing property file for imqbroker was not found, no stored properties will be loaded
+]]
+
+[2022-04-03T18:16:14.843+0300] [glassfish 6.2] [INFO] [] [javax.resourceadapter.mqjmsra.lifecycle] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998974843] [levelValue: 800] [[
+  MQJMSRA_RA1101: GlassFish MQ JMS Resource Adapter Started:EMBEDDED]]
+
+[2022-04-03T18:16:14.877+0300] [glassfish 6.2] [WARNING] [] [javax.resourceadapter.mqjmsra.inbound.message] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998974877] [levelValue: 900] [[
+  MQJMSRA_AS4001: setDestination:Invalid destination name=java:/queue/lab4]]
+
+[2022-04-03T18:16:14.877+0300] [glassfish 6.2] [WARNING] [rardeployment.exception_on_invoke_setter] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.util] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998974877] [levelValue: 900] [[
+  RAR7096: Exception null while trying to set the value java:/queue/lab4 on property destination]]
+
+[2022-04-03T18:16:14.878+0300] [glassfish 6.2] [WARNING] [endpoint.activation.failure] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.inbound] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998974878] [levelValue: 900] [[
+  RAR8501: Exception during endpoint activation for ra [ jmsra ], activationSpecClass [ com.sun.messaging.jms.ra.ActivationSpec ] : java.security.PrivilegedActionException: com.sun.appserv.connectors.internal.api.ConnectorRuntimeException]]
+
+[2022-04-03T18:16:14.878+0300] [glassfish 6.2] [SEVERE] [containers.mdb.create_container_exception] [javax.enterprise.system.container.ejb.mdb.org.glassfish.ejb.mdb] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998974878] [levelValue: 1000] [[
+  MDB00017: [Services.Consumer]: Exception in creating message-driven bean container: [java.lang.Exception]]]
+
+[2022-04-03T18:16:14.878+0300] [glassfish 6.2] [SEVERE] [] [javax.enterprise.system.container.ejb.mdb.org.glassfish.ejb.mdb] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998974878] [levelValue: 1000] [[
+  java.lang.Exception
+java.lang.Exception
+	at com.sun.enterprise.connectors.inbound.ConnectorMessageBeanClient.setup(ConnectorMessageBeanClient.java:189)
+	at org.glassfish.ejb.mdb.MessageBeanContainer.<init>(MessageBeanContainer.java:227)
+	at org.glassfish.ejb.mdb.MessageBeanContainerFactory.createContainer(MessageBeanContainerFactory.java:36)
+	at org.glassfish.ejb.startup.EjbApplication.loadContainers(EjbApplication.java:198)
+	at org.glassfish.ejb.startup.EjbDeployer.load(EjbDeployer.java:264)
+	at org.glassfish.ejb.startup.EjbDeployer.load(EjbDeployer.java:80)
+	at org.glassfish.internal.data.ModuleInfo.load(ModuleInfo.java:182)
+	at org.glassfish.internal.data.ApplicationInfo.load(ApplicationInfo.java:289)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:476)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:199)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:467)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:516)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:512)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:363)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:511)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:542)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:534)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:363)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:533)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1441)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1823)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1699)
+	at com.sun.enterprise.v3.admin.AdminAdapter.doCommand(AdminAdapter.java:510)
+	at com.sun.enterprise.v3.admin.AdminAdapter.onMissingResource(AdminAdapter.java:200)
+	at org.glassfish.grizzly.http.server.StaticHttpHandlerBase.service(StaticHttpHandlerBase.java:150)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.security.PrivilegedActionException: com.sun.appserv.connectors.internal.api.ConnectorRuntimeException
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:558)
+	at com.sun.enterprise.connectors.inbound.ConnectorMessageBeanClient.getActivationSpec(ConnectorMessageBeanClient.java:260)
+	at com.sun.enterprise.connectors.inbound.ConnectorMessageBeanClient.setup(ConnectorMessageBeanClient.java:169)
+	... 45 more
+Caused by: com.sun.appserv.connectors.internal.api.ConnectorRuntimeException
+	at com.sun.enterprise.connectors.util.SetMethodAction.handleException(SetMethodAction.java:128)
+	at com.sun.enterprise.connectors.util.SetMethodAction.run(SetMethodAction.java:110)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	... 47 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at com.sun.enterprise.connectors.util.SetMethodAction.run(SetMethodAction.java:84)
+	... 48 more
+Caused by: java.lang.IllegalArgumentException: MQJMSRA_AS4001: setDestination:Invalid destination name=java:/queue/lab4
+	at com.sun.messaging.jms.ra.ActivationSpec.setDestination(ActivationSpec.java:368)
+	... 53 more
+]]
+
+[2022-04-03T18:16:14.880+0300] [glassfish 6.2] [SEVERE] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998974880] [levelValue: 1000] [[
+  Exception while invoking class org.glassfish.ejb.startup.EjbDeployer load method
+java.lang.RuntimeException: EJB Container initialization error
+	at org.glassfish.ejb.startup.EjbApplication.loadContainers(EjbApplication.java:210)
+	at org.glassfish.ejb.startup.EjbDeployer.load(EjbDeployer.java:264)
+	at org.glassfish.ejb.startup.EjbDeployer.load(EjbDeployer.java:80)
+	at org.glassfish.internal.data.ModuleInfo.load(ModuleInfo.java:182)
+	at org.glassfish.internal.data.ApplicationInfo.load(ApplicationInfo.java:289)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:476)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:199)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:467)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:516)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:512)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:363)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:511)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:542)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:534)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:363)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:533)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1441)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1823)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1699)
+	at com.sun.enterprise.v3.admin.AdminAdapter.doCommand(AdminAdapter.java:510)
+	at com.sun.enterprise.v3.admin.AdminAdapter.onMissingResource(AdminAdapter.java:200)
+	at org.glassfish.grizzly.http.server.StaticHttpHandlerBase.service(StaticHttpHandlerBase.java:150)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.Exception
+	at com.sun.enterprise.connectors.inbound.ConnectorMessageBeanClient.setup(ConnectorMessageBeanClient.java:189)
+	at org.glassfish.ejb.mdb.MessageBeanContainer.<init>(MessageBeanContainer.java:227)
+	at org.glassfish.ejb.mdb.MessageBeanContainerFactory.createContainer(MessageBeanContainerFactory.java:36)
+	at org.glassfish.ejb.startup.EjbApplication.loadContainers(EjbApplication.java:198)
+	... 42 more
+Caused by: java.security.PrivilegedActionException: com.sun.appserv.connectors.internal.api.ConnectorRuntimeException
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:558)
+	at com.sun.enterprise.connectors.inbound.ConnectorMessageBeanClient.getActivationSpec(ConnectorMessageBeanClient.java:260)
+	at com.sun.enterprise.connectors.inbound.ConnectorMessageBeanClient.setup(ConnectorMessageBeanClient.java:169)
+	... 45 more
+Caused by: com.sun.appserv.connectors.internal.api.ConnectorRuntimeException
+	at com.sun.enterprise.connectors.util.SetMethodAction.handleException(SetMethodAction.java:128)
+	at com.sun.enterprise.connectors.util.SetMethodAction.run(SetMethodAction.java:110)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	... 47 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at com.sun.enterprise.connectors.util.SetMethodAction.run(SetMethodAction.java:84)
+	... 48 more
+Caused by: java.lang.IllegalArgumentException: MQJMSRA_AS4001: setDestination:Invalid destination name=java:/queue/lab4
+	at com.sun.messaging.jms.ra.ActivationSpec.setDestination(ActivationSpec.java:368)
+	... 53 more
+]]
+
+[2022-04-03T18:16:14.881+0300] [glassfish 6.2] [SEVERE] [NCLS-CORE-00026] [jakarta.enterprise.system.core] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998974881] [levelValue: 1000] [[
+  Exception during lifecycle processing
+java.lang.RuntimeException: EJB Container initialization error
+	at org.glassfish.ejb.startup.EjbApplication.loadContainers(EjbApplication.java:210)
+	at org.glassfish.ejb.startup.EjbDeployer.load(EjbDeployer.java:264)
+	at org.glassfish.ejb.startup.EjbDeployer.load(EjbDeployer.java:80)
+	at org.glassfish.internal.data.ModuleInfo.load(ModuleInfo.java:182)
+	at org.glassfish.internal.data.ApplicationInfo.load(ApplicationInfo.java:289)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:476)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:199)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:467)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:516)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:512)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:363)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:511)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:542)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:534)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:363)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:533)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1441)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1823)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1699)
+	at com.sun.enterprise.v3.admin.AdminAdapter.doCommand(AdminAdapter.java:510)
+	at com.sun.enterprise.v3.admin.AdminAdapter.onMissingResource(AdminAdapter.java:200)
+	at org.glassfish.grizzly.http.server.StaticHttpHandlerBase.service(StaticHttpHandlerBase.java:150)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.Exception
+	at com.sun.enterprise.connectors.inbound.ConnectorMessageBeanClient.setup(ConnectorMessageBeanClient.java:189)
+	at org.glassfish.ejb.mdb.MessageBeanContainer.<init>(MessageBeanContainer.java:227)
+	at org.glassfish.ejb.mdb.MessageBeanContainerFactory.createContainer(MessageBeanContainerFactory.java:36)
+	at org.glassfish.ejb.startup.EjbApplication.loadContainers(EjbApplication.java:198)
+	... 42 more
+Caused by: java.security.PrivilegedActionException: com.sun.appserv.connectors.internal.api.ConnectorRuntimeException
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:558)
+	at com.sun.enterprise.connectors.inbound.ConnectorMessageBeanClient.getActivationSpec(ConnectorMessageBeanClient.java:260)
+	at com.sun.enterprise.connectors.inbound.ConnectorMessageBeanClient.setup(ConnectorMessageBeanClient.java:169)
+	... 45 more
+Caused by: com.sun.appserv.connectors.internal.api.ConnectorRuntimeException
+	at com.sun.enterprise.connectors.util.SetMethodAction.handleException(SetMethodAction.java:128)
+	at com.sun.enterprise.connectors.util.SetMethodAction.run(SetMethodAction.java:110)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	... 47 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at com.sun.enterprise.connectors.util.SetMethodAction.run(SetMethodAction.java:84)
+	... 48 more
+Caused by: java.lang.IllegalArgumentException: MQJMSRA_AS4001: setDestination:Invalid destination name=java:/queue/lab4
+	at com.sun.messaging.jms.ra.ActivationSpec.setDestination(ActivationSpec.java:368)
+	... 53 more
+]]
+
+[2022-04-03T18:16:14.882+0300] [glassfish 6.2] [SEVERE] [] [jakarta.enterprise.system.core] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998974882] [levelValue: 1000] [[
+  Exception while loading the app]]
+
+[2022-04-03T18:16:14.890+0300] [glassfish 6.2] [SEVERE] [] [jakarta.enterprise.system.core] [tid: _ThreadID=51 _ThreadName=admin-listener(3)] [timeMillis: 1648998974890] [levelValue: 1000] [[
+  Exception while loading the app : EJB Container initialization error
+java.lang.Exception
+	at com.sun.enterprise.connectors.inbound.ConnectorMessageBeanClient.setup(ConnectorMessageBeanClient.java:189)
+	at org.glassfish.ejb.mdb.MessageBeanContainer.<init>(MessageBeanContainer.java:227)
+	at org.glassfish.ejb.mdb.MessageBeanContainerFactory.createContainer(MessageBeanContainerFactory.java:36)
+	at org.glassfish.ejb.startup.EjbApplication.loadContainers(EjbApplication.java:198)
+	at org.glassfish.ejb.startup.EjbDeployer.load(EjbDeployer.java:264)
+	at org.glassfish.ejb.startup.EjbDeployer.load(EjbDeployer.java:80)
+	at org.glassfish.internal.data.ModuleInfo.load(ModuleInfo.java:182)
+	at org.glassfish.internal.data.ApplicationInfo.load(ApplicationInfo.java:289)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:476)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:199)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:467)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:516)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:512)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:363)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:511)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:542)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:534)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:363)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:533)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1441)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1823)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1699)
+	at com.sun.enterprise.v3.admin.AdminAdapter.doCommand(AdminAdapter.java:510)
+	at com.sun.enterprise.v3.admin.AdminAdapter.onMissingResource(AdminAdapter.java:200)
+	at org.glassfish.grizzly.http.server.StaticHttpHandlerBase.service(StaticHttpHandlerBase.java:150)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.security.PrivilegedActionException: com.sun.appserv.connectors.internal.api.ConnectorRuntimeException
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:558)
+	at com.sun.enterprise.connectors.inbound.ConnectorMessageBeanClient.getActivationSpec(ConnectorMessageBeanClient.java:260)
+	at com.sun.enterprise.connectors.inbound.ConnectorMessageBeanClient.setup(ConnectorMessageBeanClient.java:169)
+	... 45 more
+Caused by: com.sun.appserv.connectors.internal.api.ConnectorRuntimeException
+	at com.sun.enterprise.connectors.util.SetMethodAction.handleException(SetMethodAction.java:128)
+	at com.sun.enterprise.connectors.util.SetMethodAction.run(SetMethodAction.java:110)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	... 47 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at com.sun.enterprise.connectors.util.SetMethodAction.run(SetMethodAction.java:84)
+	... 48 more
+Caused by: java.lang.IllegalArgumentException: MQJMSRA_AS4001: setDestination:Invalid destination name=java:/queue/lab4
+	at com.sun.messaging.jms.ra.ActivationSpec.setDestination(ActivationSpec.java:368)
+	... 53 more
+]]
+
+[2022-04-03T18:16:24.072+0300] [glassfish 6.2] [INFO] [NCLS-REST-00001] [jakarta.enterprise.admin.rest] [tid: _ThreadID=53 _ThreadName=admin-listener(5)] [timeMillis: 1648998984072] [levelValue: 800] [[
+  Listening to REST requests at context: /command/domain.]]
+
+[2022-04-03T18:16:24.178+0300] [glassfish 6.2] [INFO] [NCLS-CORE-00092] [jakarta.enterprise.system.core] [tid: _ThreadID=123 _ThreadName=Thread-33] [timeMillis: 1648998984178] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2022-04-03T18:16:24.184+0300] [glassfish 6.2] [INFO] [NCLS-BOOTSTRAP-00028] [jakarta.enterprise.bootstrap] [tid: _ThreadID=123 _ThreadName=Thread-33] [timeMillis: 1648998984184] [levelValue: 800] [[
+  Unregistered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@4dd94a58 from service registry.]]
+
+[2022-04-03T18:16:24.184+0300] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=123 _ThreadName=Thread-7] [timeMillis: 1648998984184] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2022-04-03T18:16:24.192+0300] [glassfish 6.2] [INFO] [NCLS-JMX-00002] [jakarta.enterprise.system.jmx] [tid: _ThreadID=123 _ThreadName=Thread-33] [timeMillis: 1648998984192] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2022-04-03T18:16:24.193+0300] [glassfish 6.2] [INFO] [NCLS-JMX-00001] [jakarta.enterprise.system.jmx] [tid: _ThreadID=123 _ThreadName=Thread-33] [timeMillis: 1648998984193] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2022-04-03T18:16:24.248+0300] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=Thread-7] [timeMillis: 1648998984248] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool]]]
+
+[2022-04-03T18:16:24.259+0300] [glassfish 6.2] [INFO] [] [javax.resourceadapter.mqjmsra.lifecycle] [tid: _ThreadID=127 _ThreadName=Thread-37] [timeMillis: 1648998984259] [levelValue: 800] [[
+  MQJMSRA_RA1101: GlassFish MQ JMS Resource Adapter stopping...]]
+
+[2022-04-03T18:16:26.299+0300] [glassfish 6.2] [INFO] [] [javax.resourceadapter.mqjmsra.lifecycle] [tid: _ThreadID=127 _ThreadName=Thread-37] [timeMillis: 1648998986299] [levelValue: 800] [[
+  MQJMSRA_RA1101: GlassFish MQ JMS Resource Adapter stopped.]]
+
+[2022-04-03T18:16:26.300+0300] [glassfish 6.2] [INFO] [ra.stop-successful] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.service] [tid: _ThreadID=126 _ThreadName=Thread-36] [timeMillis: 1648998986300] [levelValue: 800] [[
+  RAR7094: jmsra shutdown successful.]]
+
